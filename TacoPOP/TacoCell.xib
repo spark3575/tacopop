@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacoPOP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Brisket" translatesAutoresizingMaskIntoConstraints="NO" id="NLY-Ff-Jqm">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="161"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brisket Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcT-zv-a8j">
+                        <rect key="frame" x="0.0" y="166" width="190" height="24"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pcT-zv-a8j" secondAttribute="trailing" id="1YC-Kn-eeJ"/>
+                <constraint firstItem="pcT-zv-a8j" firstAttribute="top" secondItem="NLY-Ff-Jqm" secondAttribute="bottom" constant="5" id="JNP-y6-aOU"/>
+                <constraint firstAttribute="trailing" secondItem="NLY-Ff-Jqm" secondAttribute="trailing" id="RoE-rz-c2Z"/>
+                <constraint firstItem="NLY-Ff-Jqm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UeD-18-KSW"/>
+                <constraint firstItem="NLY-Ff-Jqm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WG3-b0-bDH"/>
+                <constraint firstAttribute="bottom" secondItem="pcT-zv-a8j" secondAttribute="bottom" id="hR4-xl-ghp"/>
+                <constraint firstItem="pcT-zv-a8j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tV6-BW-Q37"/>
+            </constraints>
+            <size key="customSize" width="191" height="192"/>
+            <point key="canvasLocation" x="-200.5" y="-22"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Brisket" width="1024" height="678"/>
+    </resources>
+</document>
